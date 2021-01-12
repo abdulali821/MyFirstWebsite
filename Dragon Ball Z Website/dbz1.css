@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	background-color: #f0f0f0; 
+}
+
+.wrapper {
+	background:  url('dragon.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 30rem;
+}
+.navbar{
+	height: 50px;
+	width: 100%;
+	/* background: rgba(0, 0, 0, 0.4)  */
+	background-color: #333;
+}
+.logo{
+	width: 100px;
+	height: auto;
+	padding: 2px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	margin-top: 15px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: .9rem;
+	padding: 6px 13px;
+	font-family: 'roboto', sans-serif;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: #5EC26D;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1{
+	font-weight: bold;
+	color: #222;
+	font-size: 60px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: ‘soft_sugar_plainregular’;
+	padding-top: 4px;
+	text-shadow:2px 2px 2px #ccc;
+}
+.center h2{
+	font-weight: 500;
+	color: #222;
+	font-size: 30px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: ‘soft_sugar_plainregular’;
+	padding-top: 4px;
+	text-shadow:2px 2px 2px #ccc;
+}
+.center .buttons{
+	margin: 35px 280px;
+}
+
+.buttons button{
+	padding: .75rem 4rem;
+	font-size: 21px;
+	font-weight: 500;
+	color: #444;
+	background-color: transparent ;
+	border: 1px solid #444;
+	outline: none;
+	cursor: pointer;
+	border-radius: 15px;
+	transition: .5s;
+}
+.buttons .btn{
+	text-align: center;
+	margin-left: 10px;
+
+}
+.buttons button:hover{
+	background: #444;
+	color: white;
+}
+
+.gallery {
+	position: relative;
+	display:  flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.gallery-image {
+	width: 20rem;
+	margin: 10px;
+}
+
+.image {
+	width: 100%;
+	cursor: pointer;
+}
+
+.text-center {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #222;
+	text-transform: uppercase;
+}
+
+.gallery-all {
+	position: absolute;
+	top: -20px;
+	right: 60px;
+	text-decoration:  none;
+	color: #2b2b2b;
+}
+
+.gallery-all:hover {
+	text-decoration: underline;
+	color: tomato;
+}
+
+.quality {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 100px;
+	margin-top: 3rem;
+}
+
+.quality img {
+	width: 50%;
+}
+
+.quality-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: start;
+	width: 30%;
+	margin-bottom: 2rem;
+}
+
+.quality-content ul {
+	list-style: none;
+	margin-top: 1.8rem;
+}
+
+.quality-content h3 {
+	color: #333;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+
+.quality-content ul li {
+	font-size: 1.1rem;
+	padding: .5rem .3rem;
+}
+
+.quality-content ul li i {
+	font-size: .8rem;
+	color: tomato;
+	padding-right: .3rem;
+}
+.para {
+	margin-top: 3rem;
+	font-weight: bold;
+}
+.endline {
+	margin-top: 2rem;
+	font-weight: lighter;
+}
+.feed{
+	width: 1040px;
+	margin:  0 auto;
+
+}
+
+.feed-title {
+	text-align: center;
+	font-weight: 600;
+	line-height: 2px;
+	font-size: 2rem;
+	margin-left: 3rem;
+}
+
+.form {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.input-group {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center	;
+	margin-top: 10px;
+	gap: 10px;
+}
+
+label {
+	font-size: 1.3rem;
+	font-weight: 500;
+	width: 10%;
+}
+
+textarea {
+	resize: none
+}
+
+.form-input {
+	width: 50%;
+	padding: 4px 4px;
+	border-radius: 4px;
+	border:  1px solid #ccc;
+	outline: none;
+}
+
+.form-input:focus {
+	outline: none;
+	border:  1px solid blue;
+}
+
+.form-btn {
+	width: 51%;
+	margin-top: 10px;
+	color: white;
+	padding: 8px 0;
+	border: 1px solid #333;
+	background: #333;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form-btn:hover {
+	background: #222;
+}
