@@ -9,11 +9,9 @@ body {
 	scroll-behavior: smooth;	
 	background-color: #f0f0f0; 
 }
-html
-{
+html {
 	scroll-behavior: smooth;	
 }
-
 .wrapper {
 	background:  url('dragon.jpg') no-repeat;
 	background-size: cover;
